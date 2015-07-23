@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coding Tornado</title>
+<link rel="stylesheet"    href="style.css">
+
+<script src="G:\jquery-ui-1.11.4\jquery-ui-1.11.4\external\jquery\jquery.js"></script>
+<script src="G:\jquery-ui-1.11.4\jquery-ui-1.11.4\jquery-ui.js"></script>
+<script src="Behaviour.js"></script>
+</head>
+
+
+<body>
+<div id="overlay"></div>
+<div id="alertbox">
+<div>
+	
+		<div id="boxtop"></div>
+		<div id="boxmid"></div>
+		<div id="boxfoot"></div>
+	
+</div>
+</div>
+
+
+<div id="flexbox" >
+
+<header onmousedown="show()">
+	
+	
+		<img src="logo1.png" width="125px" height="103px" id = "image" />
+		<p id="box">Coding Tornado</p>
+	 
+	<strong id = "heading">Coding Tornado</strong>
+		<ul>
+			<li>Home</li>
+			<li>Contact Us</li>
+			<li>About Us</li>
+			<li>Feedback</li>
+		</ul>
+		
+
+</header>
+
+<nav>
+	<img src="k.jpg" alt="" width="90" height="120" border="0" id="small" />
+	<img src="k.jpg" alt=""  border="0" id="big" />
+	<div id="menu">
+		
+		
+		
+			<div class="title" onclick = "return false;" onmousedown = "show('menu1');"><span class="down">&#9660</span><span class="up">&#9658</span>Projects</div>
+			<div class="menu" id="menu1">
+			<a href="#">Websites</a>
+			<a href="#">Presentations</a>
+			<a href="#">Photos</a>
+			</div>
+		
+
+		
+			<div class="title" onclick = "return false;" onmousedown="show('menu2');"><span class="down">&#9660</span><span  class="up">&#9658</span>Videos</div>
+			<div class="menu" id="menu2">
+			<a href="#">Text Intros</a>
+			<a href="#">Visual Effects</a>
+			<a href="#">Slideshows</a>
+			</div>
+		
+		
+		
+		
+			<div class="title" onclick= "return false;" onmousedown="show('menu3');"><span class="down">&#9660</span><span  class="up">&#9658</span>Photos</div>
+			<div class="menu" id="menu3">
+			<a href="#">School Life</a>
+			<a href="#">College Life</a>
+			<a href="#">Family</a>
+			<a href="#">Others</a>
+			</div>
+		
+	</div>
+	
+</nav>
+<main onmousedown="show()">
+		<button onclick="alert('Hello')">Default</button>
+		<button onclick="Alert.render('Hello')">Custom</button>
+		<div id="bird"></div>
+		
+
+</main>
+<aside onmousedown="show()">
+
+<div id="nav">
+
+		
+	
+		<div></div>
+		<div></div>
+		<div></div>
+	
+	</div>
+<div id="guy"></div>
+</aside>
+<footer onmousedown="show()">
+&copy; Copyright Karan Singh
+</footer>
+
+
+</div>
+
+<body>
+
+
+
+</html>
