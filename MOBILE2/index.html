@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="author" content="Karan Singh">
+<title>Enginerds</title>
+<link href="css/stylem2.css" rel="stylesheet"/>
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+
+<link href="css/home.css" rel="stylesheet"/>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   #bubblecontent {
+    margin: 0 auto;
+    transition: opacity 0.3s linear 0s;
+}
+#titlebar {
+    background: #0073b7 none repeat scroll 0 0;
+    border-radius: 10px 10px 0 0;
+    color: #010;
+    font-size: 17px;
+    padding: 10px 20px;
+}
+#content_body {
+    background: rgba(0, 115, 204, 0.32)  none repeat scroll 0 0;
+    color: #c6e6ff;
+    margin: 0 auto 50px;
+    padding: 5px 50px 50px;
+}
+#content{
+margin:4px;
+border-radius: 10px 10px 0 0;
+}
+body{
+background:black;
+align:center;
+}
+#content h2{
+text-align:center;
+font-family:Comic Sans MS,Arial,serif;
+}
+</style>
+<script> 
+function countdown() { 	
+var xmas = new Date("September 18, 2015 10:00:01"); 	
+var now = new Date(); 	
+var timeDiff = xmas.getTime() - now.getTime(); 	
+if (timeDiff <= 0) { 
+clearTimeout(timer); 		
+alert("The Most Awaited Event Enginerds 2K15 is here!!!"); 
+ } 	
+var seconds = Math.floor(timeDiff / 1000); 	
+var minutes = Math.floor(seconds / 60); 	
+var hours = Math.floor(minutes / 60); 	
+var days = Math.floor(hours / 24); 	
+hours %= 24; 
+minutes %= 60; 
+seconds %= 60; 	
+document.getElementById("daysBox").innerHTML = days; 	
+document.getElementById("hoursBox").innerHTML = hours; 	
+document.getElementById("minsBox").innerHTML = minutes; 	
+document.getElementById("secsBox").innerHTML = seconds; 	
+var timer = setTimeout('countdown()',1000); 
+} 
+</script>
+
+<script>
+var bca = ['<h2>Enginerds Day 1</h2><p>Events for today include Counter Strike 1.6, Fifa, NFS, Robotics, Mathemagic, Web UI design. Its your chance to enjoy as well as win money and awesome goodies. Registrations have begun; Hurry!!! Register now.<br>Date: 18<sup>th</sup> September, Time: 10:30am - 5:00pm</p></p><p>To Register now Click  <a href="registration.php" style="cursor:pointer; text-decoration:underline;">Here</a></p>','<h2>Enginerds Day 2</h2><p>The Fest will be in full swing and we guarantee you will be enjoying yourself to the fullest, Round 2 of many events, have not registered need not worry many new events coming your way. Events for today include  Counter Strike 1.6, Fifa, NFS, Quiz, Sudoku, Code Bugging.<br>Date: 19<sup>th</sup> September, Time: 10:30am - 5:00pm</p></p><p>To Register now Click  <a href="registration.php" style="cursor:pointer; text-decoration:underline;">Here</a></p>','<h2>Enginerds Day 3</h2><p>Last day of the festival, better join in on the action. You would not want to miss out on any of the action. Many new events scheduled for today, namely 2048, Debate, Photography, Short Film and NFS, FIFA and Counter Strike will reach their climax today.<br>Date: 18<sup>th</sup> September, Time: 10:30am - 5:00pm</p></p><p>To Register now Click  <a href="registration.php" style="cursor:pointer; text-decoration:underline;">Here</a></p>'];
+
+var pics = ["1.jpg","2.jpg"];
+
+var i=0;
+var elem;
+function next(){
+i++;
+elem.style.opacity=0;
+if(i>(bca.length-1)){
+i=0;
+}
+setTimeout('slide()',1000);
+}
+
+function slide(){
+
+elem.innerHTML=bca[i];
+elem.style.opacity=1;
+setTimeout('next()',5000);
+}
+var pics = ["1.jpg","2.jpg"];
+var j=0;
+var elem1;
+function next1(){
+j++;
+elem1.style.opacity=0;
+if(j>(pics.length-1)){
+j=0;
+}
+setTimeout('slide1()',1000);
+}
+
+function slide1(){
+
+elem1.innerHTML='<img src="images/sponsor/'+pics[j]+'">';
+elem1.style.opacity=1;
+setTimeout('next1()',5000);
+}
+</script>
+</head>
+
+<body>
+<header>
+	<a href="http://www.gcelt.gov.in"><img src="images/logo2.png" class="logoE"/></a>
+	<div><h1 class="StarGlow"><a href="index.html" style="text-decoration:none;color:white;">Enginerds 2K15</a></h1></div>
+<a href="#mainMenu"><div class="nav">
+	
+		<div></div>
+		<div></div>
+		<div></div>
+	
+	</div></a><br />	
+	</header>
+
+	
+
+	<div data-role="panel" id="mainMenu" data-display="overlay"  data-position="left">
+	<ul data-role="listview" data-theme="b" data-divider-theme="a" data-count-theme="a">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">AboutUs</a></li>
+			<li><a href="events.html">Events</a></li>
+            <li><a href="legacy.html">Legacy</a></li>
+            <li><a href="registration.html">Registration</a></li>
+	</ul>
+
+	</div>
+
+<div id="content" style="background:black;">
+    <div id="titlebar" style="text-shadow:none; text-align:center;">Coded Brains to Chorded Hearts!</div>
+    <div id="content_body">
+    <div id="bubblecontent">
+        <h2 >Enginerds Day 1</h2>
+		<p>Events for today include Counter Strike 1.6, Fifa, NFS, Robotics, Mathemagic, Web UI design. Its your chance to enjoy as well as win money and awesome goodies. Registrations have begun; Hurry!!! Register now.<br>Date: 18<sup>th</sup> September, Time: 10:30am - 5:00pm</p>
+		<p>To Register now Click <a href="registration.php" style="cursor:pointer; text-decoration:underline;">Here</a></p>	
+      </div>
+    </div>
+</div>	
+	
+<div id="center">
+<h2 class="flash">The Countdown has begun</h2>
+<h3 class="flash">Gear up for the most Spec-TECH-ular event of the year!!!</h3>
+<div class="timer" style="border-color:white;"><p>
+    Days</p>
+    <span  id="daysBox"></span>
+</div> 
+<div class="timer" style="border-color:green;"><p>Hours</p><span id="hoursBox"></span></div> 
+
+<div class="timer" style="border-color:red;"><p>Minutes</p><span id="minsBox" ></span></div> 
+
+<div class="timer" style="border-color:khaki;"><p>Seconds</p><span  id="secsBox" ></span></div>
+</div>
+<div id="s">
+<div id="ssm"></div>
+<div><a href="https://www.facebook.com/enginerds15?fref=ts" target="_blank"><img src="images/fb.png" style="margin:0vw 4vw;"/></a></div>
+
+</div>
+	
+	
+<footer>
+<div style="background-color:black; padding:5px;">
+		<a href="developers.html" style="color:white;">About the Developers</a><br>
+&copy; Copyright GCELT-Enginerds2015
+		</div>
+</footer>
+<script>elem=document.getElementById("bubblecontent"); slide();</script>
+<script>elem1=document.getElementById("ssm"); slide1();</script>
+<script>countdown();</script>	
+</body>
+</html>

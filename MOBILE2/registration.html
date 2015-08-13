@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="author" content="Karan Singh">
+<title>Enginerds</title>
+<link href="css/stylem2.css" rel="stylesheet"/>
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<header>
+	<a href="http://www.gcelt.gov.in"><img src="images/logo2.png" class="logoE"/></a>
+	<div><h1 class="StarGlow"><a href="index.html" style="text-decoration:none;color:white;">Enginerds 2K15</a></h1></div>
+<a href="#mainMenu"><div class="nav">
+	
+		<div></div>
+		<div></div>
+		<div></div>
+	
+	</div></a><br />	
+	</header>
+
+	
+
+	<div data-role="panel" id="mainMenu" data-display="overlay"  data-position="left">
+	<ul data-role="listview" data-theme="b" data-divider-theme="a" data-count-theme="a">
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">AboutUs</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="index.html">Home</a></li>
+            <li><a href="legacy.html">Legacy</a></li>
+            <li><a href="registration.html">Registration</a></li>
+	</ul>
+
+	</div>
+	
+	<center>
+<div style="border:1px solid black; width:85%;margin:10px;">
+<div style="width:85%;margin:0px auto;"><img src="images/aa.jpg" alt="Enginerds" width="80%;"></div>
+	<form id = "registration" method = "post" action = "html/registration.php" >
+	<h2 style="color:#161b33">Enginerds2K15 Registration </h2><br/>
+	<table border="0">
+		<tr>
+			<td>
+				<label for = "a">First Name</label> 
+			</td>
+			<td>
+				<input type = "text" name= "firstname"  placeholder="Enter your first name" id="a"  autofocus required/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "b">Last Name</label>
+			</td>
+			<td>
+				<input type = "text" name= "lastname"  placeholder="Enter your last name" style="" id= "b"/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "c">College</label>
+			</td>
+			<td>
+				<input type = "text" name= "college"  placeholder="Your College's name" style="" id="c"/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "d">Phone</label>
+			</td>
+			<td>
+				<input type = "text" name= "phone"  placeholder="Enter your Phone no" style="" id="d"/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "e">E-Mail</label>
+			</td>
+			<td>
+				<input type = "text" name= "email"  placeholder="Enter your E-Mail Id" style="" id="e" required/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "f">Password</label>
+			</td>
+			<td>
+				<input type = "password" name= "password"   id="f" style="" required/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "g">Re-Enter Password</label>
+			</td>
+			<td>
+				<input type = "password" name= "password1"   style="" id="g" required/><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for = "i">Age</label>
+			</td>
+			<td>
+				<input type = "text" name= "age"  placeholder="Enter your Age"  style="" id="i" required/><br/>
+			</td>
+		</tr>
+        <tr>
+	
+<div class="ui-field-contain">
+    <td><label for="select-custom-24">Select Your events</label></td>
+	<td>
+	<select name="select-custom-24" id="select-custom-24" data-native-menu="false" data-placeholder="Select Your events" multiple="multiple" data-iconpos="left">
+		<option value="NFS">NFS</option>
+		<option value="Fifa09">Fifa09</option>
+		<option value="Debate">Debate</option>
+		<option value="Quiz">Quiz</option>
+		<option value="2048">2048</option>
+		<option value="Form-a-Frame">Form-a-Frame</option>
+		<option value="Robotics">Robotics</option>
+		<option value="Design Our Way">Design Our Way</option>
+		<option value="CounterStrike">CounterStrike</option>
+		<option value="Mathemagic">Mathemagic</option>
+		<option value="Show me Short">Show Me Short</option>
+		<option value="Coding">Code Bugging</option>
+	</select>
+</td>
+	</div>
+   
+		</tr>
+        <tr>
+        	<td>
+            	<label>Sex</label>
+            </td>
+            <td>
+	<input type = "radio" name = "sex" value = "Male" id="r1" checked="checked"/><label for = "r1">Male</label>
+	<input type = "radio" name = "sex" value = "Female" id= "r2" /><label for = "r2">Female</label><br/>
+    		</td>
+        </tr>
+        <tr>
+        	<td>
+				<label for = "h">Date of Birth</label>
+            </td>
+            <td>
+				<input type="date" name="dob" style="" id="h" placeholder="dd/mm/yyyy"/>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" align="center">
+			<input type="submit" value = "Register" style=""/>
+            </td>
+        </tr>
+	</table>
+	</form>
+</div>
+</center>
+<footer>
+<div style="background-color:black; padding:5px;">
+		<a href="developers.html" style="color:white;">About the Developers</a><br>
+&copy; Copyright GCELT-Enginerds2015
+		</div>
+</footer>
+	
+	</body>
+	</html>
