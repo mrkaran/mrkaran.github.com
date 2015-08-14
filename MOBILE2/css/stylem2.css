@@ -1,64 +1,28 @@
+
 @charset "utf-8";
-body{
-	background:#0F0F0F;
-	margin:0px auto;
-	color:white;
+body {
+    background: #0f0f0f none repeat scroll 0 0;
+    color: white;
+    margin: 0 auto;
 }
 
-
-
-
-header  ul > a {
-    text-align: center;
-    border-radius: 10px;
-    color: #999;
-    font-size: 1.2vw;
-	cursor:pointer;
-    font-size:20px;
-	height: 3vw;
-    padding: 10px 10px 0;
-    text-align: center;
-    transition: background 0.3s linear 0s, color 0.3s linear 0s;
-    min-width: 70px;
-	font-family:Comic Sans MS,Arial,serif;
-	margin-right:10px;
-}
-header ul > a:hover {
-    background: #1287c3 none repeat scroll 0 0;
-    color: black;
-}
-header  ul {
-    display: flex;
-    list-style-type: none;
-	background:rgba(0,0,0,1);
-	text-align:center;
-	margin:-3px auto;
-
-	width:100%;
-
-	}
-#mainMenu{
-top:10.4vw;
+#mainMenu {
+    top: 10.4vw;
 }
 .StarGlow {
+    animation: 4s ease 0s alternate none infinite running StarGlow;
     display: block;
+    font-family: Comic Sans MS,Arial,serif;
+    font-size: 5vw;
+    height: 7vw;
     line-height: 3.5vw;
-    margin: 0;
-    outline: none;
-    vertical-align: middle;
+    margin: auto;
+    outline: medium none;
+    padding-top: 2vw;
     text-align: center;
-    text-shadow: 0 0 4px white,
-        0 0 5px white,
-        0 0 10px white;
-    -webkit-animation: 4s StarGlow infinite alternate;
-	animation: 4s StarGlow infinite alternate;
-	height:7vw;
-	text-align:center;
-	font-size:5vw;
-	font-family:Comic Sans MS,Arial,serif;
-	margin:auto;
-	padding-top:2vw;
-	}
+    text-shadow: 0 0 4px white, 0 0 5px white, 0 0 10px white;
+    vertical-align: middle;
+}
 @keyframes StarGlow {
 0% {
     text-shadow: 0 0 4px white, 0 0 2px white, 0 0 10px white;
@@ -73,7 +37,6 @@ top:10.4vw;
     text-shadow: 0 0 8px white, 0 0 5px white, 0 0 20px white;
 }
 }
-
 header {
     background: rgba(0, 0, 0, 0) url("../images/bg.jpg") repeat scroll 0 0;
 }
@@ -88,11 +51,11 @@ header {
 }
 .logoE {
     border-radius: 150px;
-    top: 1vw;
     float: right;
     height: 7vw;
     position: relative;
     right: 1vw;
+    top: 1vw;
     width: 7vw;
 }
 footer {
@@ -128,18 +91,16 @@ ul a, a:visited, a:active {
 .nav:hover {
     border: 1px solid #06f;
 }
-#main4 h3{
-color:#f9c86a;
-text-align:left;
-font-size:15px;
-margin:4px;
+#main4 h3 {
+    color: #f9c86a;
+    font-size: 15px;
+    margin: 4px;
+    text-align: left;
 }
-
-
-#main4 h2{
-color:#4282bc;
+#main4 h2 {
+    color: #4282bc;
 }
-   #bubblecontent {
+#bubblecontent {
     margin: 0 auto;
     transition: opacity 0.3s linear 0s;
 }
@@ -151,83 +112,73 @@ color:#4282bc;
     padding: 10px 20px;
 }
 #content_body {
-    background: rgba(0, 115, 204, 0.32)  none repeat scroll 0 0;
+    background: rgba(0, 115, 204, 0.32) none repeat scroll 0 0;
     color: #c6e6ff;
     margin: 0 auto 50px;
     padding: 5px 50px 50px;
+	text-shadow:none;
 }
-#content{
-margin:4px;
-border-radius: 10px 10px 0 0;
+#content {
+    border-radius: 10px 10px 0 0;
+    margin: 4px;
 }
-#body3{
-background:black;
-align:center;
-text-align:center;
+#body3 {
+    background: black none repeat scroll 0 0;
+    text-align: center;
 }
-#content h2{
-text-align:center;
-font-family:Comic Sans MS,Arial,serif;
+#content h2 {
+    font-family: Comic Sans MS,Arial,serif;
+    text-align: center;
 }
-#body2{
-text-align:center;
+#body2 {
+    text-align: center;
 }
-#main2{
-width:95%;
-margin:10px auto;
-
+#main2 {
+    margin: 10px auto;
+    width: 95%;
 }
-
-#main2 > div img, #main2 > div{
+#main2 > div img, #main2 > div {
     display: inline-block;
     height: 100px;
     width: 100px;
 }
-#main2 > div{
-margin:0px auto;
+#main2 > div {
+    margin: 0 auto;
 }
-#main1{
-width:90%;
-font-size:15px;
-margin:0px auto;
+#main1 {
+    font-size: 15px;
+    margin: 0 auto;
+    width: 90%;
 }
-	
-#main1 h4{
-	
-	font-size:20px;
-	text-align:center;
+#main1 h4 {
+    font-size: 20px;
+    text-align: center;
 }
-
-#main1 h2{
-	font-size:25px;
-	color:#3399ff;
-	text-align:center;
-	text-shadow:0 1px 0 #3399ff,
-0 3px 5px rgba(51, 153, 255, .2),  
-0 20px 20px rgba(51, 153, 255, .2);
+#main1 h2 {
+    color: #3399ff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 1px 0 #3399ff, 0 3px 5px rgba(51, 153, 255, 0.2), 0 20px 20px rgba(51, 153, 255, 0.2);
 }
-#main{
-width:95%;
-margin:10px auto;
-text-align:center;
+#main {
+    margin: 10px auto;
+    text-align: center;
+    width: 95%;
 }
-
-.p{
-text-align:center;
+.p {
+    text-align: center;
 }
-
-#main  img, #main > div{
- display: inline-block;
+#main img, #main > div {
+    display: inline-block;
 }
-#main  img{
-width:90%;
-height:60%;
-padding:0px 10px 0px;
-border-radius:199px;
+#main img {
+    border-radius: 199px;
+    height: 125px;
+    padding: 0;
+    width: 125px;
 }
-#main > div{
-width:200px;
-margin:0px 8% 0px;
-height:300px;
-
+#main > div {
+    height: 300px;
+    margin: 0 2vw;
+    width: auto;
 }

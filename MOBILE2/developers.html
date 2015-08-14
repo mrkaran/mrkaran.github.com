@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="author" content="Karan Singh">
+<link href="css/dev.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/e.ico">
+<script>
+var bca = ['Really Awesome Web Designer','Look no further if you are looking for a developer','Good grasp on both Client-side and Server Side Scripting','Can make your web pages look cool with awesome animations','Bit of a Geek','If you have any Project you would like us to work on, feel free to Contact Us, We will be oblidged to help you out.'];
+var i=0;
+var elem;
+function next(){
+i++;
+elem.style.opacity=0;
+if(i>(bca.length-1)){
+i=0;
+}
+setTimeout('slide()',1000);
+}
+
+function slide(){
+
+elem.innerHTML=bca[i];
+elem.style.opacity=1;
+setTimeout('next()',5000);
+}
+</script>
+<style>
+   #ssh {
+    transition: opacity 0.3s linear 0s;
+}
+
+html{
+background:linear-gradient(#222,#000);
+color:white;
+}
+
+.StarGlow {
+    animation: 4s ease 0s alternate none infinite running StarGlow;
+    display: block;
+    font-family: Comic Sans MS,Arial,serif;
+    font-size: 30px;
+    height: 7vw;
+    line-height: 3.5vw;
+    margin: auto;
+    outline: medium none;
+    padding-top: 2vw;
+    text-align: center;
+    text-shadow: 0 0 4px white, 0 0 5px white, 0 0 10px white;
+    vertical-align: middle;
+}
+@keyframes StarGlow {
+0% {
+    text-shadow: 0 0 4px white, 0 0 2px white, 0 0 10px white;
+}
+15% {
+    text-shadow: 0 0 8px white, 0 0 3px white, 0 0 30px white;
+}
+30% {
+    text-shadow: 0 0 4px white, 0 0 4px white, 0 0 10px white;
+}
+100% {
+    text-shadow: 0 0 8px white, 0 0 5px white, 0 0 20px white;
+}
+}
+header {
+    background: rgba(0, 0, 0, 0) url("../images/bg.jpg") repeat scroll 0 0;
+}
+</style>
+</head>
+<body>
+
+<h1 class=StarGlow>Developers</h1>
+<header>
+  <div class="profileLogo"> 
+    <p class="logoPlaceholder"></p>
+  </div>
+  <div class="profilePhoto"> 
+<img src="images/karan1.jpg" alt="sample logo" width="259px" height="259px" style="border-radius:260px;"></div>
+  <section class="profileHeader">
+    <h1>KARAN SINGH</h1>
+    <h3 id="ssh">REALLY AWESOME WEB DESIGNER</h3>
+    <hr>
+    <p>I am a Software Engineer currently pursuing my B.Tech in Government College of Engineering and Leather Technology. The world of Computer Science is ever changing, So to keep up with it, both online and offline learning is important.
+	So I being a programming enthusiast like to brush up my skills both online and offline especially online.
+	Presently my Knowledge in the field of computers is limited to  HTML, CSS, JavaScript, jQuery, Ajax, PHP, MySQL, JSON, C, C++, Java, Java Netbeans, Microsoft Office, Visual Studio, Adobe After Effects and some Photoshop</p>
+  </section>
+  <aside class="socialNetworkNavBar">
+    <div class="socialNetworkNav"> 
+ <a href="http://www.facebook.com/karan521995" title="facebook" target="_blank"> 
+      <img src="images/fb.png" alt="Facebook" ></a> </div>
+    <div class="socialNetworkNav"> 
+ <a href="https://twitter.com/karan_ks" title="twitter" target="_blank"> <img src="images/twitter.png"  alt="twitter"></a> </div>
+ <div class="socialNetworkNav"> 
+ <a href="http://in.linkedin.com/in/karansingh5" title="linkedin" target="_blank"> <img src="images/linkedin.png"  alt="linkedin"></a> </div>
+  </aside>
+</header>
+  <section class="section1">
+    <h2 class="sectionTitle">Contact Info</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+      <p><span>Email :</span> singhkaran521995@gmail.com</p>
+      <p><span>Phone :</span> +918981109993</p>
+      <p><span>Address :</span> 8, R.B.C Road,Kolkata-28</p>
+    </div>
+  </section>
+  <header>
+  <div class="profileLogo"> 
+    <p class="logoPlaceholder"></p>
+  </div>
+  <div class="profilePhoto"> 
+<img src="images/asif.jpg" alt="sample logo" width="259px" height="259px" style="border-radius:260px;"></div>
+  <section class="profileHeader">
+    <h1>ASIF MOHAMMAD MOLLAH</h1>
+    <h3>Programmer, Designer and more...</h3>
+    <hr>
+    <p>About asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asifAbout asif</p>
+  </section>
+  <aside class="socialNetworkNavBar">
+    <div class="socialNetworkNav"> 
+ <a href="http://www.facebook.com/mrasifmohammadmollah" title="facebook" target="_blank">
+      <img src="images/fb.png" alt="Facebook"></a> </div>
+    <div class="socialNetworkNav"> 
+    <a href="http://www.twitter.com/mrasifmdmollah" title="twitter" target="_blank"> <img src="images/twitter.png"  alt="twitter"> </div>
+  <div class="socialNetworkNav"> 
+ <a href="https://www.linkedin.com/in/asifmohammadmollah" title="linkedin" target="_blank"> <img src="images/linkedin.png"  alt="linkedin"></a> </div>
+  
+  </aside>
+</header>
+  <section class="section1">
+    <h2 class="sectionTitle">Contact Info</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+      <p><span>Email :</span>asifmohammadmollah@gmail.com</p>
+      <p><span>Phone :</span>+919547264803</p>
+      <p><span>Address :</span>Berhampore</p>
+      <p><span>Website :</span><a href="http://www.mrasif.in">www.mrasif.in</a></p>
+    </div>
+  </section>
+  
+<div>
+
+</div>  
+  <script>elem=document.getElementById("ssh"); slide();</script>
+</body>
+</html>
